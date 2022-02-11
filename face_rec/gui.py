@@ -15,7 +15,7 @@ class Gui(object):
     # define the run method
     def run(self):
         # load the known faces and the encodings
-        path = "/home/justinr/Desktop/GitKraken/smart-mirror/face_rec/knownPerson/" # Add "/" at the end of the path
+        path = "YOUR_PATH_HERE" # Add "/" at the end of the path
         known_face_encodings = []
         known_face_names = []
 
