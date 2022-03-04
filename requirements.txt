@@ -1,13 +1,5 @@
-# voice assitant
-SpeechRecognition
-pyttsx3
-pywhatkit
-datetime
-wikipedia
-pyjokes
-
 # face recognition
-# CMake
-# face-recognition
-# opencv-python
-# numpy
+CMake
+face-recognition
+opencv-python
+numpy
