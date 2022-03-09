@@ -3,3 +3,4 @@ CMake
 face-recognition
 opencv-python
 numpy
+pygame
