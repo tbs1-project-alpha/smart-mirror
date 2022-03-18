@@ -2,7 +2,7 @@
 # using pygame library
 
 # importing the pygame library
-import pygame, pygame.camera, os, time
+import pygame, pygame.camera
 
 
 class TakePicture:
@@ -12,7 +12,7 @@ class TakePicture:
         # make the list of all available cameras
         self.camlist = pygame.camera.list_cameras()
         # define the path where the images will be saved
-        self.path = f"{path}/face_rec/knownPerson/unknown/"
+        self.path = f"{path}/face_rec/images/unknown"
         # initializing the cam variable with default camera
         self.cam = pygame.camera.Camera(self.camlist[0], (640, 480))
         # opening the camera
@@ -31,7 +31,7 @@ class TakePicture:
         # capturing the single image
         image = self.cam.get_image()
         # saving the image
-        pygame.image.save(image, f"{self.path}unknown.png")
+        pygame.image.save(image, f"{self.path}/unknown.png")
 
 # app = TakePicture(path = os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # app.check()

@@ -1,4 +1,4 @@
-import face_recognition, os
+import face_recognition
 from os import listdir
 from os.path import isfile, join
 
@@ -11,30 +11,29 @@ class Colors:
 class Recognize:
     def __init__(self, path) -> None:    
         self.checked = ""
-        self.path = f"{path}/face_rec/knownPerson/"
+        self.path = f"{path}/face_rec/images"
 
 
     def check(self):
-        picture_of_test = face_recognition.load_image_file(f"{self.path}unknown/unknown.png")
-        test_face_encoding = face_recognition.face_encodings(picture_of_test)[0]
+        picture_of_test = face_recognition.load_image_file(f"{self.path}/unknown/unknown.png")
+        test_face_encoding = face_recognition.face_encodings(picture_of_test)
 
         onlyfiles1 = ""
         onlyfiles = [f for f in listdir(self.path) if isfile(join(self.path, f))]
-
 
         for i in onlyfiles:
             size = len(i)
             onlyfiles1 += f"{i[:size - 4]}\n"
 
-            unknown_picture = face_recognition.load_image_file(f"{self.path}{i}")
+            unknown_picture = face_recognition.load_image_file(f"{self.path}/{i}")
             unknown_face_encoding = face_recognition.face_encodings(unknown_picture)[0]
 
-            results = face_recognition.compare_faces([test_face_encoding], unknown_face_encoding)
+            results = face_recognition.compare_faces(test_face_encoding, unknown_face_encoding)
 
             # if results[0] == True:
             #     return f"{i[:size - 4]}"
 
-            if results[0] == True:
+            if results == True:
                 self.checked += f"{Colors.OKGREEN}{i[:size - 4]} is in the picture \n{Colors.END}"
                 
             else:

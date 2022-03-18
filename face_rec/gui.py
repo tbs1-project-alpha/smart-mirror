@@ -15,11 +15,12 @@ class Gui(object):
     # define the run method
     def run(self):
         # load the known faces and the encodings
-        path = "YOUR_PATH_HERE" # Add "/" at the end of the path
+        path = "YOUR_PATH_HERE" + "/"
         known_face_encodings = []
         known_face_names = []
 
-        video_capture = cv2.VideoCapture(0)
+        # video_capture = cv2.VideoCapture(0) # primary webcam
+        video_capture = cv2.VideoCapture(2) # secondary webcam
 
         # loop over the image paths
         onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
