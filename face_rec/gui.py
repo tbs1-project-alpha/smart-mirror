@@ -27,9 +27,15 @@ class Gui(object):
         # make different variables for the known faces and the encodings
         for x in range(len(onlyfiles)):
             onlyfiles1 = f"{onlyfiles[x][:len(onlyfiles[x]) - 4]}"
-            globals()['image%s' % x] = face_recognition.load_image_file(f"{path}{onlyfiles[x]}")
-            globals()['face_encoding%s' % x] = face_recognition.face_encodings(globals()['image%s' % x])[0]
-            known_face_encodings.append(globals()['face_encoding%s' % x])
+            globals()[f'image{x}'] = face_recognition.load_image_file(
+                f"{path}{onlyfiles[x]}"
+            )
+
+            globals()[f'face_encoding{x}'] = face_recognition.face_encodings(
+                globals()[f'image{x}']
+            )[0]
+
+            known_face_encodings.append(globals()[f'face_encoding{x}'])
             known_face_names.append(onlyfiles1)
 
         # initialize the video stream
