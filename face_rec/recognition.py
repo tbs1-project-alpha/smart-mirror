@@ -1,15 +1,10 @@
 import face_recognition
 from os import listdir
 from os.path import isfile, join
-
-
-class Colors:
-    OKGREEN = '\033[92m'
-    FAIL = '\033[91m'
-    END = '\033[0m'
+from colors import Colors
 
 class Recognize:
-    def __init__(self, path) -> None:    
+    def __init__(self, path):
         self.checked = ""
         self.path = f"{path}/face_rec/images"
 
