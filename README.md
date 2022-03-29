@@ -105,4 +105,6 @@ Now you are able to run the ```main.py``` file so you can use the voice assistan
 
 ## Authors
 
-- [@justinrDEV](https://www.github.com/justinrDEV)
+- [Justin Rosengart](https://www.github.com/justinrDEV)
+- [Niklas Brockner](https://github.com/NiiklasDEV)
+- [Daniel Pantförder](https://github.com/Kirivyl)
