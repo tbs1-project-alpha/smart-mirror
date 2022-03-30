@@ -21,9 +21,13 @@ class MirrorUI(QWidget):
         loader.load(ui_file, self)
         ui_file.close()
 
+    def changeWeather(self, temp):
+        self.ui.temp.setText(temp)
+
 
 if __name__ == "__main__":
     app = QApplication([])
     widget = MirrorUI()
     widget.show()
+    widget.changeWeather("20")
     sys.exit(app.exec_())
