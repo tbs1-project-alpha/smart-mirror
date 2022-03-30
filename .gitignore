@@ -2,3 +2,5 @@
 class_diagram
 
 *.dtmp
+
+*.pyc
