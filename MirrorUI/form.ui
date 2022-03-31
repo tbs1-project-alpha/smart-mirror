@@ -53,8 +53,8 @@ color: white;</string>
     <rect>
      <x>450</x>
      <y>300</y>
-     <width>211</width>
-     <height>81</height>
+     <width>361</width>
+     <height>151</height>
     </rect>
    </property>
    <property name="styleSheet">

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 7.0.0, 2022-03-31T06:36:04. -->
+<!-- Written by QtCreator 7.0.0, 2022-03-30T20:01:52. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{2b554b8c-f9a9-441d-8949-c06284503c0b}</value>
+  <value type="QByteArray">{8bad4ff9-f0e4-45f9-8db7-8769807426cf}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -91,9 +91,9 @@
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop (x86-windows-msvc2022-pe-32bit)</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop (x86-windows-msvc2022-pe-32bit)</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{6e3466a0-82f7-4a55-b2be-93c77f81f8ab}</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{f09c7345-f3b0-4503-b13b-d6cdf4dfb1ee}</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">-1</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
@@ -118,16 +118,16 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/Justin/Desktop/GitKraken/smart-mirror/MirrorUI/mirrorui.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/Justin/Desktop/GitKraken/smart-mirror/MirrorUI/mirrorui.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Justin/Desktop/GitKraken/smart-mirror/MirrorUI/mirrorui.py</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{8d559be1-d527-440e-8486-3d0417ea11e3}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\Justin\Desktop\GitKraken\smart-mirror\MirrorUI\mirrorui.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/justi/Documents/GitKraken/smart-mirror/MirrorUI/mirrorui.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/justi/Documents/GitKraken/smart-mirror/MirrorUI/mirrorui.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/justi/Documents/GitKraken/smart-mirror/MirrorUI/mirrorui.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{21b33757-d2d4-4541-87b6-0a52aa8372a9}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\justi\Documents\GitKraken\smart-mirror\MirrorUI\mirrorui.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Justin/Desktop/GitKraken/smart-mirror/MirrorUI</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/justi/Documents/GitKraken/smart-mirror/MirrorUI</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
