@@ -6,11 +6,11 @@ from colors import Colors
 class Recognize:
     def __init__(self, path):
         self.checked = ""
-        self.path = f"{path}/face_rec/images"
+        self.path = f"{path}\\face_rec\\images"
 
 
     def check(self):
-        picture_of_test = face_recognition.load_image_file(f"{self.path}/unknown/unknown.png")
+        picture_of_test = face_recognition.load_image_file(f"{self.path}\\unknown\\unknown.png")
         test_face_encoding = face_recognition.face_encodings(picture_of_test)
 
         onlyfiles1 = ""

@@ -11,7 +11,7 @@ class Gui(object):
     # define the constructor
     def __init__(self) -> None:
         # load the known faces and the encodings
-        self.path = "PATH_OF_IMAGES_WITH_KNOWN_FACES_HERE" + "/"
+        self.path = "C:\\Users\\Justin\\Desktop\\GitKraken\\smart-mirror\\face_rec\\image" + "\\"
         self.known_face_encodings = []
         self.known_face_names = []
 
@@ -34,9 +34,7 @@ class Gui(object):
                 f"{self.path}{onlyfiles[x]}"
             )
 
-            globals()[f'face_encoding{x}'] = face_recognition.face_encodings(
-                globals()[f'image{x}']
-            )[0]
+            globals()[f'face_encoding{x}'] = face_recognition.face_encodings(globals()[f'image{x}'])[0]
 
             self.known_face_encodings.append(globals()[f'face_encoding{x}'])
             self.known_face_names.append(onlyfiles1)

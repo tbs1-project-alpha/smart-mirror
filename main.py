@@ -13,11 +13,10 @@ class Main(object):
         self.recognition = face_rec.recognition.Recognize(self.path)
 
     def run(self):
-        while True:
-            self.picture.check()
-            sleep(0.6)
-            print(self.recognition.check())
-            sleep(1)
+        self.picture.check()
+        sleep(0.6)
+        print(self.recognition.check())
+        sleep(1)
 
 
 if __name__ == "__main__":

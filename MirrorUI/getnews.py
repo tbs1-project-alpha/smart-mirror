@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-class getnews(object):
+class GetNews(object):
 	def __init__(self) -> None:
 		self.url = 'https://www.tagesschau.de/'
 		self.response = requests.get(self.url)
