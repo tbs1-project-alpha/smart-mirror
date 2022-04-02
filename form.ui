@@ -23,7 +23,7 @@
    <string notr="true">background-color: black;
 color: white;</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="greating">
    <property name="geometry">
     <rect>
      <x>450</x>
@@ -33,20 +33,20 @@ color: white;</string>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="date">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>300</y>
-     <width>361</width>
+     <x>940</x>
+     <y>180</y>
+     <width>331</width>
      <height>151</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -59,10 +59,10 @@ color: white;</string>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="weather">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -72,17 +72,26 @@ color: white;</string>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QLCDNumber" name="clock">
+  <widget class="QLabel" name="clock">
    <property name="geometry">
     <rect>
      <x>940</x>
-     <y>30</y>
-     <width>321</width>
-     <height>141</height>
+     <y>20</y>
+     <width>331</width>
+     <height>151</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto Light</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

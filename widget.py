@@ -1,7 +1,11 @@
 # This Python file uses the following encoding: utf-8
 import os
-from pathlib import Path
 import sys
+import threading
+
+from time import sleep
+from pathlib import Path
+from datetime import datetime
 
 from PySide6.QtWidgets import QApplication, QWidget
 from PySide6.QtCore import QFile
@@ -12,6 +16,9 @@ class Widget(QWidget):
     def __init__(self):
         super(Widget, self).__init__()
         self.load_ui()
+        self.time = None
+        # gettime = threading.Thread(target=self.getTime)
+        # gettime.start()
 
     def load_ui(self):
         loader = QUiLoader()
@@ -21,9 +28,19 @@ class Widget(QWidget):
         loader.load(ui_file, self)
         ui_file.close()
 
+    async def getTime(self):
+        print("start")
+        self.time = datetime.now().strftime("%H:%M:%S")
+        # change text in QLable clock to current time
+        self.ui.clock.setText(self.time)
+        print(self.time)
+        # sleep(1)
+        
+
 
 if __name__ == "__main__":
     app = QApplication([])
     widget = Widget()
     widget.show()
+    widget.getTime()
     sys.exit(app.exec_())

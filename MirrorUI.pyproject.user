@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 7.0.0, 2022-03-30T20:01:52. -->
+<!-- Written by QtCreator 7.0.0, 2022-04-02T13:06:02. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -118,11 +118,11 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/justi/Documents/GitKraken/smart-mirror/MirrorUI/mirrorui.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/justi/Documents/GitKraken/smart-mirror/MirrorUI/mirrorui.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/justi/Documents/GitKraken/smart-mirror/MirrorUI/mirrorui.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/justi/Documents/GitKraken/smart-mirror/MirrorUI/widget.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/justi/Documents/GitKraken/smart-mirror/MirrorUI/widget.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/justi/Documents/GitKraken/smart-mirror/MirrorUI/widget.py</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{21b33757-d2d4-4541-87b6-0a52aa8372a9}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\justi\Documents\GitKraken\smart-mirror\MirrorUI\mirrorui.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\justi\Documents\GitKraken\smart-mirror\MirrorUI\widget.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
