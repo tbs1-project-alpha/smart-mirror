@@ -3,14 +3,14 @@ import os
 from pathlib import Path
 import sys
 
-from PySide2.QtWidgets import QApplication, QWidget
-from PySide2.QtCore import QFile
-from PySide2.QtUiTools import QUiLoader
+from PySide6.QtWidgets import QApplication, QWidget
+from PySide6.QtCore import QFile
+from PySide6.QtUiTools import QUiLoader
 
 
-class MirrorUI(QWidget):
+class Widget(QWidget):
     def __init__(self):
-        super(MirrorUI, self).__init__()
+        super(Widget, self).__init__()
         self.load_ui()
 
     def load_ui(self):
@@ -21,13 +21,9 @@ class MirrorUI(QWidget):
         loader.load(ui_file, self)
         ui_file.close()
 
-    def changeWeather(self, temp):
-        self.ui.temp.setText(temp)
-
 
 if __name__ == "__main__":
     app = QApplication([])
-    widget = MirrorUI()
+    widget = Widget()
     widget.show()
-    widget.changeWeather("20")
     sys.exit(app.exec_())
