@@ -1,12 +1,17 @@
 import face_recognition
 from os import listdir
 from os.path import isfile, join
-from colors import Colors
+
+
+class Colors:
+    OKGREEN = '\033[92m'
+    FAIL = '\033[91m'
+    END = '\033[0m'
 
 class Recognize:
-    def __init__(self, path):
+    def __init__(self, path) -> None:    
         self.checked = ""
-        self.path = f"{path}\\face_rec\\images"
+        self.path = f"{path}/face_rec/images"
 
 
     def check(self):
@@ -29,10 +34,10 @@ class Recognize:
             #     return f"{i[:size - 4]}"
 
             if results == True:
-                self.checked += f"{Colors.OKGREEN}{i[:size - 4]} is in the picture \n{Colors.END}"
+                self.checked = f"{Colors.OKGREEN}{i[:size - 4]} is in the picture \n{Colors.END}"
                 
             else:
-                self.checked += f"{Colors.FAIL}{i[:size - 4]} is NOT in the picture \n{Colors.END}"
+                self.checked = f"{Colors.FAIL}{i[:size - 4]} is NOT in the picture \n{Colors.END}"
 
         return self.checked
 

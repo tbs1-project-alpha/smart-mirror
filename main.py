@@ -13,10 +13,14 @@ class Main(object):
         self.recognition = face_rec.recognition.Recognize(self.path)
 
     def run(self):
-        self.picture.check()
-        sleep(0.6)
-        print(self.recognition.check())
-        sleep(1)
+        while True:
+            self.picture.check()
+            sleep(0.6)
+            rec = self.recognition.check()
+            if "is NOT" not in rec:
+                with open('face.txt', 'w') as f:
+                    f.write(self.recognition.check())
+            sleep(1)
 
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@ class Gui(object):
     # define the constructor
     def __init__(self) -> None:
         # load the known faces and the encodings
-        self.path = "C:\\Users\\Justin\\Desktop\\GitKraken\\smart-mirror\\face_rec\\image" + "\\"
+        self.path = "/home/justin/Desktop/GitKraken/smart-mirror-testing/face_rec/images" + "/"
         self.known_face_encodings = []
         self.known_face_names = []
 
@@ -34,7 +34,9 @@ class Gui(object):
                 f"{self.path}{onlyfiles[x]}"
             )
 
-            globals()[f'face_encoding{x}'] = face_recognition.face_encodings(globals()[f'image{x}'])[0]
+            globals()[f'face_encoding{x}'] = face_recognition.face_encodings(
+                globals()[f'image{x}']
+            )[0]
 
             self.known_face_encodings.append(globals()[f'face_encoding{x}'])
             self.known_face_names.append(onlyfiles1)
@@ -78,11 +80,15 @@ class Gui(object):
             font = cv2.FONT_HERSHEY_DUPLEX # set the font
             cv2.putText(self.frame, self.name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)  # draw the name of the person
 
+
     # define the run method
     def run(self):
         names = self.getNames()
         self.addKnownFace(names)
         self.end()
+
+
+    def end(self):
 
         # loop over the frames from the video stream
         while True:
