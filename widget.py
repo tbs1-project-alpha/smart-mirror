@@ -1,6 +1,6 @@
 import requests
-import asyncio
 
+from PySide6.QtCore import *
 from PySide6.QtWidgets import *
 from PySide6.QtUiTools import *
 from PySide6.QtGui import *
@@ -10,24 +10,57 @@ from MirrorUI.weather import Weather
 from MirrorUI.datetime import DateTime
 from MirrorUI.getGreeting import Greeting
 
-
 class MirrorUI(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.update_delay_addons = 1000000
+        self.update_delay_time = 1000
+
+        self.greetings = Greeting(self.getName())
+        self.news_manager = GetNews()
+        self.weather_manager = Weather()
+
         loader = QUiLoader()
         self.ui = loader.load("form.ui", None)
         self.ui.show()
 
-        image = QImage()
-        image.loadFromData(requests.get(Weather().getIcon()).content)
-        pixmap = QPixmap(image)
+        update_timer = QTimer(self)
+        update_timer.timeout.connect(self.update)
+        update_timer.start(self.update_delay_time)
 
+        self.update_weather()
+        self.update_news()
+        self.update_greeting()
+
+        greeting_timer = QTimer(self)
+        greeting_timer.timeout.connect(self.update_greeting)
+        greeting_timer.start(self.update_delay_addons)
+
+        weather_timer = QTimer(self)
+        weather_timer.timeout.connect(self.update_weather)
+        weather_timer.start(self.update_delay_addons)
+
+        news_timer = QTimer(self)
+        news_timer.timeout.connect(self.update_news)
+        news_timer.start(self.update_delay_addons)
+        
+    def update(self):
         self.ui.clock.setText(DateTime().get_time().strftime("%H:%M:%S"))
         self.ui.date.setText(DateTime().get_date().strftime("%d.%m.%Y"))
-        self.ui.greating.setText(self.getGreeting())
-        self.ui.temp.setText(Weather().getTemp())
-        self.ui.temp_visual.setPixmap(pixmap)
-        self.ui.news.setText(str(GetNews().report()))
+
+    def update_weather(self):
+        self.image = QImage()
+        self.image.loadFromData(requests.get(self.weather_manager.getIcon()).content)
+        self.pixmap = QPixmap(self.image)
+
+        self.ui.temp.setText(self.weather_manager.getTemp())
+        self.ui.temp_visual.setPixmap(self.pixmap)
+
+    def update_news(self):
+        self.ui.news.setText(str(self.news_manager.report()))
+
+    def update_greeting(self):
+        self.ui.greating.setText(self.greetings.getGreeting())
 
     def getName(self):
         with open('face.txt') as f:
@@ -35,35 +68,7 @@ class MirrorUI(QMainWindow):
 
         return first_line
 
-    def getGreeting(self):
-        r = Greeting(self.getName())
-        return r.getGreeting()
-
-    async def setDateTime(self):
-        while True:
-            self.ui.date.setText(DateTime().get_date().strftime("%d.%m.%Y"))
-            self.ui.clock.setText(DateTime().get_time().strftime("%H:%M:%S"))
-            await asyncio.sleep(1)
-
-    async def setTempNews(self):
-        while True:
-            self.ui.temp.setText(Weather().getTemp())
-
-            image = QImage()
-            image.loadFromData(requests.get(Weather().getIcon()).content)
-            pixmap = QPixmap(image)
-            self.ui.temp.setText(pixmap)
-            
-            self.ui.news.setText(str(GetNews().report()))
-            
-            await asyncio.sleep(30)
-
-
 if __name__ == "__main__":
     app = QApplication([])
     window = MirrorUI()
-    
-    # asyncio.run(window.setDateTime())
-    # asyncio.run(window.setTemp())
-
     app.exec_()

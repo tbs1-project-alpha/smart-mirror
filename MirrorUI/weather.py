@@ -7,8 +7,14 @@ from MirrorUI.geotracker import *
 class Weather:
     def __init__(self) -> None:
         api_key = "API_KEY"
-        lat = GeoTracker().getLatlng()[0]
-        lon = GeoTracker().getLatlng()[1]
+        fallback_location = (51.4709935, 7.1555183)
+
+        try:
+            geotracker = GeoTracker()
+            lat, lon = geotracker.getLatlng()
+        except:
+            lat, lon = fallback_location
+            
         self.url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={api_key}&units=metric"
 
     def getData(self):
