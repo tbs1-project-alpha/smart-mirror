@@ -51,7 +51,7 @@ color-white: white;</string>
   <widget class="QLabel" name="temp">
    <property name="geometry">
     <rect>
-     <x>310</x>
+     <x>230</x>
      <y>30</y>
      <width>181</width>
      <height>181</height>
@@ -98,9 +98,9 @@ color-white: white;</string>
   <widget class="QLabel" name="greating">
    <property name="geometry">
     <rect>
-     <x>420</x>
+     <x>450</x>
      <y>360</y>
-     <width>521</width>
+     <width>491</width>
      <height>141</height>
     </rect>
    </property>
@@ -125,7 +125,7 @@ color-white: white;</string>
     <rect>
      <x>860</x>
      <y>50</y>
-     <width>351</width>
+     <width>361</width>
      <height>151</height>
     </rect>
    </property>
@@ -150,12 +150,15 @@ color-white: white;</string>
     <rect>
      <x>30</x>
      <y>30</y>
-     <width>261</width>
+     <width>171</width>
      <height>181</height>
     </rect>
    </property>
    <property name="text">
     <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
   <zorder>temp</zorder>
