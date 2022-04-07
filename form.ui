@@ -42,7 +42,7 @@ color-white: white;</string>
     <string notr="true">color: white;</string>
    </property>
    <property name="text">
-    <string>08.04.2022</string>
+    <string>xx.xx.xxxx</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -67,7 +67,7 @@ color-white: white;</string>
     <string notr="true">color: white;</string>
    </property>
    <property name="text">
-    <string>10 °C</string>
+    <string>0°C</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -117,7 +117,7 @@ color-white: white;</string>
     <string notr="true">color: white;</string>
    </property>
    <property name="text">
-    <string>Hallo {NAME}, ich wünsche dir einen schönen Tag.</string>
+    <string>Hallo!</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
