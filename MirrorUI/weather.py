@@ -12,9 +12,9 @@ class Weather:
         try:
             geotracker = GeoTracker()
             lat, lon = geotracker.getLatlng()
-        except:
+        except Exception:
             lat, lon = fallback_location
-            
+
         self.url = f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={api_key}&units=metric"
 
     def getData(self):
