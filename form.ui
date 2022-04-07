@@ -26,7 +26,7 @@ color-white: white;</string>
   <widget class="QLabel" name="date">
    <property name="geometry">
     <rect>
-     <x>860</x>
+     <x>900</x>
      <y>170</y>
      <width>351</width>
      <height>61</height>
@@ -51,9 +51,9 @@ color-white: white;</string>
   <widget class="QLabel" name="temp">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>130</x>
      <y>30</y>
-     <width>181</width>
+     <width>261</width>
      <height>181</height>
     </rect>
    </property>
@@ -77,15 +77,15 @@ color-white: white;</string>
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>280</y>
-     <width>321</width>
+     <y>260</y>
+     <width>1241</width>
      <height>431</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Roboto Light</family>
-     <pointsize>24</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -94,13 +94,16 @@ color-white: white;</string>
    <property name="text">
     <string>news</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QLabel" name="greating">
    <property name="geometry">
     <rect>
      <x>450</x>
-     <y>360</y>
-     <width>491</width>
+     <y>80</y>
+     <width>391</width>
      <height>141</height>
     </rect>
    </property>
@@ -123,7 +126,7 @@ color-white: white;</string>
   <widget class="QLabel" name="clock">
    <property name="geometry">
     <rect>
-     <x>860</x>
+     <x>890</x>
      <y>50</y>
      <width>361</width>
      <height>151</height>
@@ -150,7 +153,7 @@ color-white: white;</string>
     <rect>
      <x>30</x>
      <y>30</y>
-     <width>171</width>
+     <width>91</width>
      <height>181</height>
     </rect>
    </property>

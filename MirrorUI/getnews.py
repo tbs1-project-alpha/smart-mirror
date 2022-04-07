@@ -11,14 +11,15 @@ class GetNews(object):
 
 	def report(self):
 		headlines = self.soup.find('body').find_all('h3')
-		return [
+		retur = [
 		    x.text.strip() for x in list(dict.fromkeys(headlines))
 		    if x.text.strip() not in self.unwanted
 		]
 
+		return "".join(retur[i] + "\n\n" for i in range(5))
 
-# if __name__ == "__main__":
-# 	news = getnews()
-# 	news = news.report()
-# 	for i in range(10):
-# 		print(news[i])
+
+if __name__ == "__main__":
+	news = GetNews()
+	news = news.report()
+	print(news)

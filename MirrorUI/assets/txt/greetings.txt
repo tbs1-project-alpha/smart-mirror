@@ -1,0 +1,44 @@
+Aloha
+Alles Gut?
+Ave
+Ciao
+Diener
+Griass Di
+Gruess Dich
+Gruess Gott
+Grueessech
+Gruezdi
+Gruezi
+Gruezi miteinand
+Grueezi wohl
+Guten Tag
+Hallihallo
+Hallihalloechen
+Hallo
+Halloechen
+Halloele
+Hello
+Hey
+Hi
+Hoi
+Jo
+Jo Alter
+Moin
+Moin Moin
+Moinsen
+Na?
+Na Du?
+Salue
+Salut
+Schalom
+Sei gegruesst
+Sei mir gegruesset
+Servus
+Tach
+Tachchen
+Tag
+Tag Wohl!
+Wie geht es?
+Wie steht es?
+Wie geht es, wie steht es?
+Wie isset?

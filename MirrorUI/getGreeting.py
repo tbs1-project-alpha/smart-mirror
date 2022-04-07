@@ -9,4 +9,5 @@ class Greeting:
     def getGreeting(self):
         for count, line in enumerate(self.Lines, start=1):
             if count == randint(1, len(self.Lines)):
+                print(f"{line.strip()} {self.name}")
                 return f"{line.strip()} {self.name}"
