@@ -6,7 +6,7 @@ from MirrorUI.geotracker import *
 
 class Weather:
     def __init__(self) -> None:
-        api_key = "b822fce66af1992cf2752cc1fe843ce4"
+        api_key = "ADD_API_KEY_HERE"
         fallback_location = (51.4709935, 7.1555183)
 
         try:
