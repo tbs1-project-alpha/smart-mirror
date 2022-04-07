@@ -1,7 +1,7 @@
 import requests
 import json
 
-from geotracker import *
+from MirrorUI.geotracker import *
 
 
 class Weather:
@@ -24,6 +24,6 @@ class Weather:
         return f"https://openweathermap.org/img/wn/{data['current']['weather'][0]['icon']}@2x.png"
 
 
-if __name__ == "__main__":
-    weather = Weather()
-    print(weather.getTemp())
+# if __name__ == "__main__":
+#     weather = Weather()
+#     print(weather.getTemp())

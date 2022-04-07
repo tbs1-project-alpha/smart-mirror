@@ -51,7 +51,7 @@ color-white: white;</string>
   <widget class="QLabel" name="temp">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>190</x>
      <y>30</y>
      <width>181</width>
      <height>181</height>
