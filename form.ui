@@ -17,21 +17,11 @@
    <string notr="true">background-color: black;
 color-white: white;</string>
   </property>
-  <widget class="QLCDNumber" name="clock">
-   <property name="geometry">
-    <rect>
-     <x>840</x>
-     <y>10</y>
-     <width>421</width>
-     <height>211</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLabel" name="date">
    <property name="geometry">
     <rect>
-     <x>870</x>
-     <y>250</y>
+     <x>860</x>
+     <y>230</y>
      <width>351</width>
      <height>151</height>
     </rect>
@@ -87,6 +77,19 @@ color-white: white;</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="clock">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>50</y>
+     <width>351</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

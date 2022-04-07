@@ -9,10 +9,10 @@ from PySide6.QtWidgets import QApplication, QWidget
 from PySide6.QtCore import QFile
 from PySide6.QtUiTools import QUiLoader
 
-from face_rec.gui import GUI
-from MirrorUI.getnews import GetNews
-# from MirrorUI.getgreeting import GetGreeting
-from main import Main
+# from face_rec.gui import GUI
+# from MirrorUI.getnews import GetNews
+# # from MirrorUI.getgreeting import GetGreeting
+# from main import Main
 
 
 class Widget(QWidget):
