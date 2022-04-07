@@ -1,36 +1,24 @@
-# This Python file uses the following encoding: utf-8
-import os
-import sys
-
-from pathlib import Path
-
-from PySide6.QtWidgets import QApplication, QWidget
-from PySide6.QtCore import QFile
-from PySide6.QtUiTools import QUiLoader
-
-# from face_rec.gui import GUI
-# from MirrorUI.getnews import GetNews
-# # from MirrorUI.getgreeting import GetGreeting
-# from main import Main
+from functools import partial
+from PySide6.QtWidgets import *
+from PySide6.QtUiTools import *
 
 
-class Widget(QWidget):
+class Main(QMainWindow):
     def __init__(self):
-        super(Widget, self).__init__()
-        self.load_ui()
-
-    def load_ui(self):
+        super().__init__()
         loader = QUiLoader()
-        path = os.fspath(Path(__file__).resolve().parent / "form.ui")
-        ui_file = QFile(path)
-        ui_file.open(QFile.ReadOnly)
-        loader.load(ui_file, self)
-        ui_file.close()
+        self.ui = loader.load("form.ui", None)
+        self.ui.show()
+        self.ui.clock.setText("TIME")
+        self.ui.date.setText("DATE")
+        self.ui.greating.setText("GREATING")
+        self.ui.temp.setText("TEMP")
+        self.ui.temp_visual.setText("TEMP IMAGE")
+        self.ui.news.setText("NEWS")
+
 
 
 if __name__ == "__main__":
     app = QApplication([])
-    widget = Widget()
-    widget.show()
-
-    sys.exit(app.exec_())
+    window = Main()
+    app.exec_()

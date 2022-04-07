@@ -10,6 +10,12 @@
     <height>720</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Roboto Light</family>
+    <pointsize>24</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Widget</string>
   </property>
@@ -21,36 +27,50 @@ color-white: white;</string>
    <property name="geometry">
     <rect>
      <x>860</x>
-     <y>230</y>
+     <y>170</y>
      <width>351</width>
-     <height>151</height>
+     <height>61</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Roboto Light</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
    <property name="text">
-    <string/>
+    <string>08.04.2022</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="temp">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>310</x>
      <y>30</y>
-     <width>241</width>
+     <width>181</width>
      <height>181</height>
     </rect>
    </property>
-   <property name="text">
-    <string>TextLabel</string>
+   <property name="font">
+    <font>
+     <family>Roboto Light</family>
+     <pointsize>40</pointsize>
+    </font>
    </property>
-  </widget>
-  <widget class="QGraphicsView" name="graphicsView">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>256</width>
-     <height>192</height>
-    </rect>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>10 °C</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="news">
@@ -62,8 +82,17 @@ color-white: white;</string>
      <height>431</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Roboto Light</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>news</string>
    </property>
   </widget>
   <widget class="QLabel" name="greating">
@@ -71,12 +100,24 @@ color-white: white;</string>
     <rect>
      <x>420</x>
      <y>360</y>
-     <width>381</width>
+     <width>521</width>
      <height>141</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Roboto Light</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Hallo {NAME}, ich wünsche dir einen schönen Tag.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="clock">
@@ -88,10 +129,41 @@ color-white: white;</string>
      <height>151</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Roboto Light</family>
+     <pointsize>50</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
    <property name="text">
-    <string/>
+    <string>15:30</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
+  <widget class="QLabel" name="temp_visual">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>261</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <zorder>temp</zorder>
+  <zorder>news</zorder>
+  <zorder>greating</zorder>
+  <zorder>clock</zorder>
+  <zorder>date</zorder>
+  <zorder>temp_visual</zorder>
  </widget>
  <resources/>
  <connections/>
