@@ -11,11 +11,11 @@ class Gui(object):
     # define the constructor
     def __init__(self) -> None:
         # load the known faces and the encodings
-        self.path = "/home/justin/Desktop/GitKraken/smart-mirror-testing/face_rec/images" + "/"
+        self.path = "C:\\Users\\Justin\\Desktop\\GitKraken\\smart-mirror\\face_rec\\images" + "/"
         self.known_face_encodings = []
         self.known_face_names = []
 
-        self.video_capture = cv2.VideoCapture(0)
+        self.video_capture = cv2.VideoCapture(1)
 
         self.face_locations = []
         self.face_encodings = []
