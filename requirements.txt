@@ -1,6 +1,8 @@
 # face recognition
 CMake
 face-recognition
-opencv-python
-numpy
+opencv-python~=4.6.0.66
+numpy~=1.23.3
 pygame
+requests~=2.28.1
+feedparser~=6.0.10
