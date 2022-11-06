@@ -4,3 +4,4 @@ class_diagram
 *.dtmp
 
 *.pyc
+.idea/inspectionProfiles/profiles_settings.xml
