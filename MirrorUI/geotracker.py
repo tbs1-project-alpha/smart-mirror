@@ -1,10 +1,11 @@
 import geocoder
 from geopy.geocoders import Nominatim
 
+
 class GeoTracker:
     def __init__(self) -> None:
         self.geolocator = Nominatim(user_agent="geoapiExercises")
-        #print(type(self.geolocator))
+        # print(type(self.geolocator))
 
     def getLatlng(self):
         g = geocoder.ip('me')
