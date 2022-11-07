@@ -1,15 +1,13 @@
 import requests
-
 from PySide6.QtCore import *
-from PySide6.QtWidgets import *
-from PySide6.QtUiTools import *
 from PySide6.QtGui import *
+from PySide6.QtUiTools import *
+from PySide6.QtWidgets import *
 
-from MirrorUI.getnews import GetNews
-from MirrorUI.news_manager import NewsManager
-from MirrorUI.weather import Weather
 from MirrorUI.datetime import DateTime
 from MirrorUI.getGreeting import Greeting
+from MirrorUI.weather import Weather
+
 
 class MirrorUI(QMainWindow):
     def __init__(self):
