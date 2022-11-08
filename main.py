@@ -1,8 +1,8 @@
-import os
 import pathlib
-import face_rec.takePic
-import face_rec.recognition
 from time import sleep
+
+import face_rec.recognition
+import face_rec.takePic
 
 
 class Main(object):
